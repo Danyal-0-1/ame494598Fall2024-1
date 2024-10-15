@@ -1,16 +1,20 @@
+// Define your primary color variable once at the top
+$primary: #0c680e; 
+
 .bg-primary {
-  background-color: $primary: #0c680e; 
+  background-color: $primary; // Use the variable here
 }
 
 .text-primary {
-  color: $primary: #000; 
+  color: #000; // Direct color, or use a variable like $black if defined
 }
 
 a {
-  color: $primary;
+  color: $primary; // Use the variable
+
   &:hover,
   &:focus,
   &:active {
-    color: darken($primary, 15%);
+    color: darken($primary, 15%); // Use a darker shade of the primary color
   }
 }
